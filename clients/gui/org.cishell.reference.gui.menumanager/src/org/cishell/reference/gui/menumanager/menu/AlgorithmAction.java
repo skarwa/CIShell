@@ -85,8 +85,7 @@ public class AlgorithmAction extends Action implements AlgorithmProperty, DataMa
             	this.data,
             	this.converters);
             SchedulerService scheduler = (SchedulerService) getService(SchedulerService.class);
-            
-            scheduler.schedule(algorithm, uniqueServiceReference);
+          scheduler.schedule(algorithm, uniqueServiceReference);
         } catch (Throwable exception) {
         	// Just in case an uncaught exception occurs. Eclipse will swallow errors thrown here.
             exception.printStackTrace();
