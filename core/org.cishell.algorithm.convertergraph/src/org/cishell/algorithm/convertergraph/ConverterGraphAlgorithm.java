@@ -29,9 +29,7 @@ public class ConverterGraphAlgorithm implements Algorithm {
 
 	private LogService logger;
 	private BundleContext bundleContext;
-	
 	private Graph outputGraph;
-	
 	private int nodeCount = 0, edgeCount = 0;
 
     /**

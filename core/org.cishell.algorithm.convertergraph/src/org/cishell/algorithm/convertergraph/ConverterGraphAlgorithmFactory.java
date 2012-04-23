@@ -17,9 +17,9 @@ import org.osgi.service.component.ComponentContext;
 public class ConverterGraphAlgorithmFactory implements AlgorithmFactory {
 	
     private BundleContext bundleContext;
-
-	protected void activate(ComponentContext ctxt) {
+    protected void activate(ComponentContext ctxt) {
         bundleContext = ctxt.getBundleContext();
+    
     }
     
 	public Algorithm createAlgorithm(Data[] data, Dictionary parameters, CIShellContext context) {
